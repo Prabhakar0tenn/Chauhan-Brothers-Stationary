@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chauhan Brothers | Stationery</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    📞 +91-8882461887 &nbsp; | &nbsp;
+    📍 Chauhan Brothers, Noida &nbsp; | &nbsp;
+    🕘 8 AM – 9 PM
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <!-- LOGO (PATH FIXED) -->
+    <img 
+      src="Assests/image.png"
+      alt="Chauhan Brothers Logo"
+      class="logo"
+    />
+
+    <!-- PRINT FEATURE -->
+    <div class="print-feature">
+      🖨️
+      <span>
+        Printout on Demand –
+        <b>Color & B/W</b> | Premium Quality
+      </span>
+
+      <a
+        href="https://wa.me/918882461887?text=Hello Chauhan Brothers 👋 I want to send images for printout."
+        target="_blank"
+      >
+        📤 Send Image on WhatsApp
+      </a>
+    </div>
+
+    <!-- SEARCH BAR -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search pens, notebooks, brands..."
+    />
+
+  </header>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="categories">
+    <button onclick="filterCategory('All')">All</button>
+    <button onclick="filterCategory('Pens')">Pens</button>
+    <button onclick="filterCategory('Notebooks')">Notebooks</button>
+    <button onclick="filterCategory('Pencils')">Pencils</button>
+    <button onclick="filterCategory('Sharpeners')">Sharpeners</button>
+    <button onclick="filterCategory('Geometry')">Geometry Sets</button>
+    <button onclick="filterCategory('Calendars')">Calendars</button>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <section id="products" class="products"></section>
+
+  <!-- JS -->
+  <script src="logic.js"></script>
+
+</body>
+</html>
